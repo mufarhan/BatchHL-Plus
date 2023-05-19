@@ -310,7 +310,7 @@ void DHighwayLabelling::BuildIndex(int topk[]) {
     time_ += temp;
   }
 
-  std::cout << "Construction Time (sec.): " << time_ << " Labelling Size: " << LabellingSize() << std::endl;
+  std::cout << "Construction Time (sec.): " << time_ << " Labelling Size: " << LabellingSize() << " MB" << std::endl;
 }
 
 void DHighwayLabelling::UpdateLabelling(std::string filename) {
