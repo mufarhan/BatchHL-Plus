@@ -261,7 +261,7 @@ void HighwayLabelling::BuildIndex(int topk[]) {
     t[i].join();
   time_ += GetCurrentTimeSec();
 
-  std::cout << "Construction Time (sec.): " << time_ << " Labelling Size: " << LabellingSize() << std::endl;
+  std::cout << "Construction Time (sec.): " << time_ << " Labelling Size: " << LabellingSize() << " MB" << std::endl;
 }
 
 void HighwayLabelling::UpdateLabelling(std::string filename, int m) {
