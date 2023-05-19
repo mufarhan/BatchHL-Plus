@@ -1,6 +1,6 @@
 # BatchHL+
 
-This is an implementation of BatchHL+ method which can reflect graph changes in batches to answer shortest-path distance queries efficiently over very large batch-dynamic networks.
+This is an implementation of BatchHL+ method which can efficiently reflect batches of updates to answer shortest-path distance queries in very large dynamic graphs.
 
 To see the accepted format for datasets, batch updates and query pairs, you may refer to the Sample folder. After the test inputs are ready, please us the following commands to test BatchHL+.
 
