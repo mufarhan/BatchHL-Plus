@@ -1,8 +1,8 @@
-# BatchHL-Plus
+# BatchHL+
 
-This is an implementation of BatchHL-Plus method which can reflect graph changes in batches to answer shortest-path distance queries efficiently over very large batch-dynamic networks.
+This is an implementation of BatchHL+ method which can reflect graph changes in batches to answer shortest-path distance queries efficiently over very large batch-dynamic networks.
 
-To see the accepted format for datasets, batch updates and query pairs, you may refer to the Sample folder. After the test inputs are ready, please us the following commands to test BatchHL-Plus.
+To see the accepted format for datasets, batch updates and query pairs, you may refer to the Sample folder. After the test inputs are ready, please us the following commands to test BatchHL+.
 
 =====================================
 
@@ -28,7 +28,7 @@ Example:<br/>
 @2: number of landmarks<br/>
 @3: file to load the labelling from<br/>
 @4: batch file containing updates<br/>
-@5: method parameter (0 to run Deletion-Only, 1 to run Insertion-Only or 10 to run Combined(BatchHL+))<br/>
+@5: method parameter (0 to run Deletion-Only, 1 to run Insertion-Only or 10 to run BatchHL+)<br/>
 
 Example:<br/>
 ./run update_labelling graph.txt 20 graph_labelling batch.txt 0
