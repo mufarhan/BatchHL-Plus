@@ -252,13 +252,8 @@ void HighwayLabelling::BuildIndex(int topk[]) {
 
   // Start computing Highway Labelling (HL)
   time_ = -GetCurrentTimeSec();
-  std::thread t[K];
   for (int i = 0; i < K; i++)
-    //ConstructHighwayLabelling(i, topk);
-    t[i] = std::thread(&HighwayLabelling::ConstructHighwayLabelling, this, i, topk);
-
-  for (int i = 0; i < K; i++)
-    t[i].join();
+    ConstructHighwayLabelling(i, topk);
   time_ += GetCurrentTimeSec();
 
   std::cout << "Construction Time (sec.): " << time_ << " Labelling Size: " << LabellingSize() << " MB" << std::endl;
